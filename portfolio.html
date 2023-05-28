@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div id="aboutnav">
+                <li id="about">About</li>
+                <li id="skills">Skills</li>
+                <li id="projects">Projects</li>
+            </div>
+            <div id="contact">
+                <a target="_blank" href="https://github.com/SamruddhiDeo"><img src="portfolioimg/githublogo.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/samruddhi-deo-094586234/"><img src="portfolioimg/linkedinlogo.png" alt=""></a>
+                <a target="_blank" href="mailto: samruddhideo3@gmail.com"><img src="portfolioimg/emaillogo.png" alt=""></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="aboutContainer">
+        <h1>Samruddhi Deo</h1>
+        <p>I am a tech enthusiast and I love to build things</p>
+    </div>
+
+    <div id="skillsContainer">
+        <h1>Skills</h1>
+        <div id="skillsContainerBox">
+            <div class="skillImage"><img src="portfolioimg/html.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/css.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/js.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/php.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/mysql.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/bootstrap.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/c.png" alt=""></div>
+            <div class="skillImage"><img src="portfolioimg/java.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="projectsContainer">
+        <h1>Projects</h1>
+        <div id="projectsContainerBox">
+            <div class="projectImage">
+                <p class="view" hidden>View</p>
+                <a target="_blank" href="https://samruddhiprojects.000webhostapp.com/expensetracker.php"><img
+                        src="portfolioimg/expensess.png" alt=""></a>
+                <p>Expense Tracker</p>
+            </div>
+            <div class="projectImage">
+                <p class="view" hidden>View</p>
+                <a target="_blank" href="https://samruddhiprojects.000webhostapp.com/musicplayer.php"><img
+                        src="portfolioimg/musicss.png" alt=""></a>
+                <p>Music Player</p>
+            </div>
+            <div class="projectImage">
+                <p class="view" hidden>View</p>
+                <a target="_blank" href="https://samruddhiprojects.000webhostapp.com/memory-game.html"><img
+                        src="portfolioimg/memoryss.png" alt=""></a>
+                <p>Memory Game</p>
+            </div>
+            <div class="projectImage">
+                <p class="view" hidden>View</p>
+                <a target="_blank" href="https://samruddhiprojects.000webhostapp.com/Rock-Paper-Scissor.html"><img
+                        src="portfolioimg/rockss.png" alt=""></a>
+                <p>Rock Paper Scissor</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    atag = document.querySelectorAll(".projectImage > a");
+    Array.from(atag).forEach((e) => {
+        e.addEventListener("mouseover", () => {
+            view = e.previousElementSibling
+            view.removeAttribute("hidden")
+        })
+        e.addEventListener("mouseout", () => {
+            view = e.previousElementSibling
+            view.setAttribute("hidden", true)
+        })
+    })
+
+    about.addEventListener("click", () => {
+        aboutContainer.scrollIntoView()
+    })
+    skills.addEventListener("click", () => {
+        skillsContainer.scrollIntoView()
+    })
+    projects.addEventListener("click", () => {
+        projectsContainer.scrollIntoView(true)
+    })
+
+</script>
+
+</html>

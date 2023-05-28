@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 11.6vh;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+:root{
+ --gray : #303841;
+ --blue :  #003567
+}
+
+nav{
+    background-color: var(--blue);
+    color: white;
+    padding: 4vh;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    font-size: 1.3vw;
+
+}
+
+nav ul{
+    display: flex;
+}
+
+#aboutnav{
+    display: flex;
+align-items: center;
+    list-style: none;
+}
+
+#aboutnav li{
+    margin: 0px 1.5vw;
+    cursor: pointer;
+}
+#aboutnav li:hover{
+color: gray;
+}
+
+#contact img{
+    filter: invert(100%);
+    width:  100%;
+    /* width: 1.6vw; */
+    cursor: pointer;
+}
+
+#contact a{
+    padding: 0% 2%;
+    width: 2%;
+}
+
+#contact img:hover{
+    filter: invert(50%);
+}
+
+#contact{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#aboutContainer{
+    background-color: var(--gray);
+    color: white;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* #aboutContainer :first-child{
+    font-weight: bold;
+    font-size: 3vw;
+}   */
+#aboutContainer :last-child{
+    font-size: 2vw;
+    text-align: center;
+    max-width: 80vw;
+} 
+
+#skillsContainer{
+    text-align: center;
+    color: white;
+    background-color: var(--blue);
+   padding-bottom: 4%;
+   padding-top: 2%;
+}
+#skillsContainer h1{
+
+   margin-bottom: 2%;
+}
+
+#skillsContainerBox{
+ width: 90%;
+ margin: auto;
+
+ background-color: white;
+ border: 2px solid white;
+ border-radius: 12%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.skillImage img{
+    /* width: 70%; */
+    height: 18vh;
+
+}
+
+.skillImage{
+    width: 25%;
+    /* height: 20vh; */
+    padding: 4% 0%;
+}
+
+
+#projectsContainer{
+    background-color: var(--gray);
+    color: white;
+  
+}
+
+#projectsContainer h1{
+    padding-top: 2%;
+    text-align: center;
+}
+
+#projectsContainerBox{
+width:90% ;
+    /* background-color: var(--blue); */
+    /* border: 2px solid white; */
+    border-radius: 12%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projectsContainerBox img{
+    width: 100%;
+    display: block;
+    margin:auto;
+    cursor: pointer;
+   
+}
+
+.projectImage{
+    width: 50%;
+  padding: 4% 0;
+  position: relative;
+}
+.projectImage a{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.projectImage p{
+  text-align: center;
+  font-size: x-large;
+}
+
+#projectsContainerBox a:hover {
+    opacity: 0.3;
+  }
+
+  .view{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+
+  @media only screen and (max-width: 957px) {
+    nav{
+        font-size: 2.3vw;
+    }
+    .skillImage img{
+        /* width: 70%; */
+        height: 13vh;
+
+    }
+    #skillsContainer h1{
+        margin: 5% 0%;
+     }
+     #projectsContainer h1 {
+        padding-top: 5%;
+     }
+     #contact a{
+
+        padding: 0% 5%;
+        width: 5%;
+    }
+    #aboutContainer :last-child{
+        font-size: larger;
+      
+    } 
+    .projectImage p{
+        text-align: center;
+        font-size: larger;
+
+      }
+  }
+  @media only screen and (max-width: 770px) {
+    nav{
+        font-size: 3.3vw;
+    }
+    .skillImage img{
+        height: 13vh;
+
+    }
+    .skillImage{
+        width: 33.33%;
+
+    }
+    #contact a{
+
+        padding: 0% 5%;
+        width: 10%;
+    }
+    #aboutContainer{
+        height: 40vh;
+    }
+    #skillsContainer h1{
+        margin: 5% 0%;
+     }
+     #projectsContainer h1 {
+        padding-top: 5%;
+     }
+  }
+  @media only screen and (max-width: 550px) {
+    nav{
+        font-size: 4.3vw;
+    }
+    .skillImage img{
+        height: 16vh;
+
+    }
+    #contact a{
+
+        padding: 0% 5%;
+        width: 13%;
+    }
+    .skillImage{
+        width: 50%;
+
+    }
+    .projectImage{
+        width: 100%;
+    }
+    #aboutContainer{
+        height: 40vh;
+    }
+    #skillsContainer h1{
+        margin: 5% 0%;
+     }
+     #projectsContainer h1 {
+        padding-top: 5%;
+     }
+  }
+  @media only screen and (max-width: 400px) {
+    .skillImage img{
+        height: 10vh;
+
+    }
+    #contact a{
+
+        padding: 0% 5%;
+        width: 13%;
+    }
+    .skillImage{
+        width: 50%;
+
+    }
+    .projectImage{
+        width: 100%;
+    }
+    #aboutContainer{
+        height: 40vh;
+    }
+    #skillsContainer h1{
+        margin: 5% 0%;
+     }
+     #projectsContainer h1 {
+        padding-top: 5%;
+     }
+     
+  }
+  @media only screen and (max-width: 350px) {
+    .skillImage img{
+        height: 4vh;
+
+    }
+    .skillImage{
+        width: 50%;
+
+    }
+    #contact a{
+
+        padding: 0% 5%;
+        width: 13%;
+    }
+    .projectImage{
+        width: 100%;
+    }
+    #aboutContainer{
+        height: 40vh;
+    }
+    #skillsContainer h1{
+        margin: 5% 0%;
+     }
+     #projectsContainer h1 {
+        padding-top: 5%;
+     }
+  }
+  @media only screen and (max-width: 250px) {
+    .skillImage img{
+        height: 4vh;
+
+    }
+    #contact a{
+
+        padding: 0% 5%;
+        width: 13%;
+    }
+    .skillImage{
+        width: 50%;
+
+    }
+    .projectImage{
+        width: 100%;
+    }
+    #aboutContainer{
+        height: 30vh;
+    }
+    #skillsContainer h1{
+        margin: 5% 0%;
+     }
+     #projectsContainer h1 {
+        padding-top: 5%;
+     }
+  }
