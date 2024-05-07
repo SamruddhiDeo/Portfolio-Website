@@ -142,6 +142,7 @@ width:90% ;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #projectsContainerBox img{
@@ -177,7 +178,7 @@ width:90% ;
     left: 45%;
   }
 
-  @media only screen and (max-width: 957px) {
+  @media only screen and (max-width: 1050px) {
     nav{
         font-size: 2.3vw;
     }
@@ -234,7 +235,7 @@ width:90% ;
         padding-top: 5%;
      }
   }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 585px) {
     nav{
         font-size: 4.3vw;
     }
@@ -264,7 +265,7 @@ width:90% ;
         padding-top: 5%;
      }
   }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .skillImage img{
         height: 10vh;
 
